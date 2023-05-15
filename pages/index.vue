@@ -161,8 +161,15 @@
                 }).finally(() => {
                     this.isLoading = false;
                 });
-            }
-        }
+            },
+        },
+        // watch: {
+        //     ip(newIp, oldIp) {
+        //         const regex = /[a-zA-Z]/;
+
+        //         if (regex.test(newIp)) this.ip = oldIp;
+        //     }
+        // }
 
     }
 </script>
