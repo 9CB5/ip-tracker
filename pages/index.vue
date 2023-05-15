@@ -34,13 +34,13 @@
                 <img
                     v-if="isLoading"
                     alt="loader"
-                    class="h-[4.5rem]"
+                    class="animate__animated animate__fadeIn h-[4.5rem]"
                     src="./../assets/images/loader-2.svg"
                 >
 
                 <div
                     v-else-if="isError"
-                    class="flex flex-col h-[8rem] text-center justify-center items-center gap-4 md:flex-row md:h-[4.5rem]"
+                    class="animate__animated animate__fadeIn flex flex-col h-[8rem] text-center justify-center items-center gap-4 md:flex-row md:h-[4.5rem]"
                 >
                     <img
                         alt="error"
@@ -52,7 +52,7 @@
 
                 <ul
                     v-else
-                    class="flex flex-col gap-4 md:flex-row md:items-between w-full md:justify-between md:my-4"
+                    class="animate__animated animate__fadeIn flex flex-col gap-4 md:flex-row md:items-between w-full md:justify-between md:my-4"
                 >
                     <li
                         v-for="(item, property, index) in ipInfo"
