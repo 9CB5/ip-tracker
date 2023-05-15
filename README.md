@@ -2,7 +2,7 @@
 
 A simple that app that gets information of a given IP using the ipify API.
 
-![Image preview](assets/design/desktop-preview.jpg)
+![Image preview](assets/design/desktop-design.jpg)
 
 ## Live link
 
