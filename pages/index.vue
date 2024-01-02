@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <div>
         <header class="header flex flex-col font-bold justify-start items-center h-[16.65rem] pt-[1.21rem] md:h-[15.5rem]">
             <h1 class="pb-[1.37rem] font-medium text-center text-[1.4rem] text-white md:text-[1.75rem]">IP Address Tracker</h1>
 
@@ -30,7 +30,7 @@
             </form>
 
             <!-- IP info -->
-            <aside class="bg-white flex items-center justify-center py-[1.25rem] rounded-xl z-[1000] w-full max-w-[18.15rem] md:max-w-[62rem] md:px-[2rem]">
+            <main class="bg-white drop-shadow-xl flex items-center justify-center py-[1.25rem] rounded-xl z-[1000] w-full max-w-[18.15rem] md:max-w-[62rem] md:px-[2rem]">
                 <img
                     v-if="isLoading"
                     alt="loader"
@@ -64,11 +64,11 @@
                         <p>{{ item ? item: "-" }}</p>
                     </li>
                 </ul>
-            </aside>
+            </main>
         </header>
 
         <!-- Leaflet map -->
-        <div class="h-[600px]">
+        <div class="h-[79vh]">
             <client-only>
                 <l-map
                     :center="[lat + offset, lng]"
@@ -87,7 +87,7 @@
         </div>
 
 
-    </main>
+    </div>
 </template>
 
 <script>
@@ -183,6 +183,5 @@
         @media screen and (min-width: 768px) {
             background-image: url("./assets/images/pattern-bg-desktop.png");
         }
-
     }
 </style>
